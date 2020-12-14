@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="hellokinjal" t-extend="HrAttendanceMyMainMenu">
+        <t t-jquery="h1" t-operation="after">
+           <div>
+                <h5 class="mb8 " t-if='widget.employee.department_id' t-esc="widget.employee.department_id[1]"></h5>
+            </div>
+        </t>
+        <t t-jquery="h1" t-operation="replace">
+           <div>
+                <h1 class="mb8 xyz"><t t-esc="widget.employee.name"/></h1>
+            </div>
+        </t>
+    </t>
+</templates>
+
