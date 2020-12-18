@@ -6,30 +6,8 @@ odoo.define('attendance.hr_my_attendances', function(require){
     var field_utils = require('web.field_utils');
     var HrAttendance = require('hr_attendance.my_attendances');
 
-
-
-
     HrAttendance.include({
         contentTemplate: 'hellokinjal',
-
-        // events: _.extend({}, HrAttendance.prototype.events, {
-        //     'click .xyz': '_onSyncCalendar',
-        // }),
-
-
-        // _onSyncCalendar: function(){
-        //     var self = this;
-        //     this.do_action({
-        //         name: "Employee",
-        //         res_model: 'hr.employee',
-        //         res_id: this.employee.id,
-        //         views: [ [false, 'form']],
-        //         type: 'ir.actions.act_window',
-        //         view_type: "form",
-        //         view_mode: "form",
-        //     });
-        // },
-
 
         events: _.extend({}, HrAttendance.prototype.events, {
             'click .xyz': 'Aformview',
